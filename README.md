@@ -1,22 +1,19 @@
-### MERN Stack CRUD with JWT
-
-This is a web application project using React, with a Nodejs Backend using Express and Mongodb as Database (MERN Stack)
-
-### Installation with docker-compose (Recommended)
+An web-app banking built with React, Node.js, Express, and MongoDB for managing user accounts, financial transactions, and banking data.
 
 ```sh
-docker-compose up -d
+git clone https://github.com/Deadblack216/andesinvest.git
+cd andesinvest
+npm install
 npm run dev
 ```
 
-### Deployment
-
 ```sh
-git clone https://github.com/FaztWeb/mern-tasks-auth
-cd mern-tasks-auth
-npm i
-npm run build
-npm start
+cd client
+npm install
+npm run dev
 ```
 
-> You need to have a Mongodb database running
+**instalar mongodb**
+https://www.mongodb.com/try/download/community
+    
+    hacerlos mediante el .msi y todo por defecto mediante mongodcompass iniciar el servidor no es necesario crear una base de datos
