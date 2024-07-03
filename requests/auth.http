@@ -1,5 +1,6 @@
 @api = http://localhost:4000/api/auth
 
+
 ### post register
 POST {{api}}/register
 Content-Type: application/json
