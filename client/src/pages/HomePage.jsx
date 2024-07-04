@@ -3,24 +3,30 @@ import { Link } from "react-router-dom";
 function HomePage() {
   return (
     <div className="bg-gray-100">
-      <section className="bg-blue-700 flex justify-center items-center min-h-screen">
-        <header className="bg-white p-10 shadow-lg rounded-lg max-w-3xl">
-          <h1 className="text-5xl py-2 font-bold text-gray-800">React Tasks</h1>
-          <p className="text-md text-gray-600">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
-            fugit doloremque molestias recusandae labore repellat amet dicta tempore
-            necessitatibus facilis repellendus voluptas ducimus maiores deserunt sed
-            quo ratione provident debitis aut, voluptatem aliquam iste blanditiis
-            ex? Voluptatibus, fuga quasi necessitatibus cumque optio error enim,
-            officia accusantium vitae doloremque, molestias modi.
-          </p>
-          <Link
-            className="bg-yellow-600 text-white px-4 py-2 rounded-md mt-4 inline-block hover:bg-yellow-700 transition-colors"
-            to="/register"
-          >
-            Get Started
-          </Link>
-        </header>
+      <section className="bg-blue-900 text-white flex flex-col md:flex-row justify-between items-center min-h-screen p-10">
+        <div className="md:w-1/2 flex flex-col justify-center items-start space-y-6">
+          <span className="uppercase tracking-wider text-sm">Primero Tú</span>
+          <h1 className="text-5xl font-bold">
+            Abre tu cuenta en minutos, sin ir al banco y sin depósito inicial
+          </h1>
+          <div className="space-y-4">
+            <Link
+              className="bg-pink-600 text-white px-6 py-3 rounded-md inline-block hover:bg-pink-700 transition-colors"
+              to="/register"
+            >
+              Contrata una Cuenta →
+            </Link>
+            <Link
+              className="border border-white text-white px-6 py-3 rounded-md inline-block hover:bg-white hover:text-blue-900 transition-colors"
+              to="/login"
+            >
+              Ingresa a Banca Personas →
+            </Link>
+          </div>
+        </div>
+        <div className="md:w-1/2">
+          <img src="/mnt/assets/react.svg" alt="Tarjeta de Crédito" className="rounded-lg shadow-lg" />
+        </div>
       </section>
 
       <section className="bg-gray-50 flex justify-center items-center py-20">
