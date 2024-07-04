@@ -13,7 +13,7 @@ export function Navbar() {
   return (
     <nav className="bg-blue-800 my-3 flex justify-between py-5 px-10 rounded-lg relative">
       <div className="flex items-center space-x-4">
-        <img src="public/vite.svg" alt="Logo" className="rounded-lg shadow-lg" />
+        <img src="public/Logo.svg" alt="Logo" className="rounded-lg shadow-lg" />
         <h1 className="text-2xl font-bold text-white">
           <Link to={isAuthenticated ? "/tasks" : "/"}>AndesInvest</Link>
         </h1>
