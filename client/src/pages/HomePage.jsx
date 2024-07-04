@@ -14,13 +14,13 @@ function HomePage() {
               className="bg-pink-600 text-white px-6 py-3 rounded-md inline-block hover:bg-pink-700 transition-colors"
               to="/register"
             >
-              Contrata una Cuenta →
+              Comienza una Cuenta →
             </Link>
             <Link
               className="border border-white text-white px-6 py-3 rounded-md inline-block hover:bg-white hover:text-blue-900 transition-colors"
               to="/login"
             >
-              Ingresa a Banca Personas →
+              Ingresa a Banca web →
             </Link>
           </div>
         </div>
@@ -36,22 +36,22 @@ function HomePage() {
         <div className="md:w-1/2 p-10">
           <h2 className="text-4xl py-2 font-bold text-gray-800">Dile hola a PayPal. Tu billetera digital segura.</h2>
           <p className="text-md text-gray-600">
-            PayPal es una forma fácil, segura y privada de pagar en tiendas. Disponible con tus tarjetas American Express y Mastercard en tu iPhone y Apple Watch.
+            PayPal es una forma fácil, segura y privada de pagar en tiendas. Disponible con tus tarjetas American Express y Mastercard.
           </p>
         </div>
       </section>
 
       <section className="bg-white flex flex-col md:flex-row justify-center items-center py-20">
         <div className="md:w-1/2 p-10">
-          <h2 className="text-4xl py-2 font-bold text-gray-800">Bolsa de bienes en venta</h2>
+          <h2 className="text-4xl py-2 font-bold text-gray-800">AndesInvest: Pioneros en Tecnología </h2>
           <p className="text-md text-gray-600">
-            Descubre las oportunidades de inversión en bienes muebles e inmuebles.
+          En AndesInvest, nos enorgullece ser líderes en la innovación tecnológica dentro del sector de inversión. Nuestro compromiso es ofrecer soluciones avanzadas y personalizadas que empoderan a nuestros clientes para tomar decisiones informadas y estratégicas. A través de nuestra plataforma de vanguardia, utilizamos algoritmos inteligentes y análisis de datos en tiempo real para maximizar el rendimiento de las inversiones.
           </p>
           <Link
             className="bg-blue-600 text-white px-4 py-2 rounded-md mt-4 inline-block hover:bg-blue-700 transition-colors"
             to="/more-info"
           >
-            Conoce los bienes →
+            Conoce más →
           </Link>
         </div>
         <div className="md:w-1/2 p-10 flex justify-center">
@@ -64,11 +64,9 @@ function HomePage() {
           <img src="public/cardAndes.webp" alt="PacificID Image" className="rounded-lg shadow-lg" />
         </div>
         <div className="md:w-1/2 p-10">
-          <h2 className="text-4xl py-2 font-bold text-gray-800">PacificID</h2>
+          <h2 className="text-4xl py-2 font-bold text-gray-800">AndesInvest: Asistencia Personalizada en Transacciones</h2>
           <p className="text-md text-gray-600">
-            ¡Realizar tus transacciones es ahora mucho más fácil con PacificID!
-            Genera claves transaccionales con esta aplicación móvil para administrar de forma
-            rápida, segura y cómoda tus pagos y cobros.
+          Realizar tus transacciones es ahora mucho más fácil con AndesInvest. Nuestra plataforma te permite generar claves transaccionales de manera rápida, segura y cómoda para administrar todos tus pagos y cobros. Con nuestra asistencia personalizada, aseguramos que cada transacción se maneje con la máxima eficiencia y seguridad, adaptándonos a tus necesidades específicas. Simplifica tu vida financiera con AndesInvest y disfruta de un servicio confiable y exclusivo para tus operaciones diarias.
           </p>
           <Link
             className="bg-blue-600 text-white px-4 py-2 rounded-md mt-4 inline-block hover:bg-blue-700 transition-colors"
@@ -79,60 +77,52 @@ function HomePage() {
         </div>
       </section>
 
-      <footer className="bg-blue-900 text-white py-12">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
-            <h4 className="font-bold mb-4">Productos y Servicios</h4>
-            <ul>
-              <li><a href="#" className="hover:underline">Cuenta de Ahorros</a></li>
-              <li><a href="#" className="hover:underline">Multicrédito</a></li>
-              <li><a href="#" className="hover:underline">American Express</a></li>
-              <li><a href="#" className="hover:underline">Mastercard</a></li>
-              <li><a href="#" className="hover:underline">Visa</a></li>
-              <li><a href="#" className="hover:underline">Membership Rewards</a></li>
-              <li><a href="#" className="hover:underline">Pólizas de Inversión</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-bold mb-4">Acerca de EPN</h4>
-            <ul>
-              <li><a href="#" className="hover:underline">Conócenos</a></li>
-              <li><a href="#" className="hover:underline">Transparencia</a></li>
-              <li><a href="#" className="hover:underline">Sostenibilidad</a></li>
-              <li><a href="#" className="hover:underline">Gobierno Corporativo</a></li>
-              <li><a href="#" className="hover:underline">Accionistas</a></li>
-              <li><a href="#" className="hover:underline">Inversionistas</a></li>
-              <li><a href="#" className="hover:underline">Trabaja con Nosotros</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-bold mb-4">Canales de Atención</h4>
-            <ul>
-              <li><a href="#" className="hover:underline">Teléfono: 04 37 30 100</a></li>
-              <li><a href="#" className="hover:underline">Celular: 099 37 30 100</a></li>
-              <li><a href="#" className="hover:underline">Puntos de Atención</a></li>
-              <li><a href="#" className="hover:underline">Centro de Ayuda</a></li>
-              <li><a href="#" className="hover:underline">Reclamos</a></li>
-              <li><a href="#" className="hover:underline">Whatsapp</a></li>
-              <li><a href="#" className="hover:underline">Instagram</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-bold mb-4">Conoce más Sobre</h4>
-            <ul>
-              <li><a href="#" className="hover:underline">Programa de Educación Financiera</a></li>
-              <li><a href="#" className="hover:underline">COSEDE Protegemos tu dinero</a></li>
-            </ul>
-          </div>
+      <footer className="bg-blue-900 text-white py-12 mt-12">
+      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h4 className="font-bold mb-4">Productos y Servicios</h4>
+          <ul>
+            <li><a href="#" className="hover:underline">Cuenta de Ahorros</a></li>
+            <li><a href="#" className="hover:underline">Multicrédito</a></li>
+            <li><a href="#" className="hover:underline">Tarjetas de Crédito</a></li>
+            <li><a href="#" className="hover:underline">Membership Rewards</a></li>
+          </ul>
         </div>
-        <div className="container mx-auto text-center mt-8">
-          <p>&copy; 2024 Escuela Politécnica Nacional. Todos los derechos reservados.</p>
-          <p>
-            <Link className="underline hover:text-yellow-400" to="/privacy-policy">Política de Privacidad</Link> | 
-            <Link className="underline hover:text-yellow-400" to="/terms-of-service"> Términos de Servicio</Link>
-          </p>
+        <div>
+          <h4 className="font-bold mb-4">Acerca de EPN</h4>
+          <ul>
+            <li><a href="#" className="hover:underline">Conócenos</a></li>
+            <li><a href="#" className="hover:underline">Transparencia</a></li>
+            <li><a href="#" className="hover:underline">Accionistas</a></li>
+            <li><a href="#" className="hover:underline">Trabaja con Nosotros</a></li>
+          </ul>
         </div>
-      </footer>
+        <div>
+          <h4 className="font-bold mb-4">Canales de Atención</h4>
+          <ul>
+            <li><a href="#" className="hover:underline">Teléfono: 098 845 4598</a></li>
+            <li><a href="#" className="hover:underline">Celular: 099 894 4578</a></li>
+            <li><a href="#" className="hover:underline">Puntos de Atención</a></li>
+            <li><a href="#" className="hover:underline">Centro de Ayuda</a></li>
+            <li><a href="#" className="hover:underline">Whatsapp</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="font-bold mb-4">Conoce más Sobre</h4>
+          <ul>
+            <li><a href="#" className="hover:underline">Programa de Educación Financiera</a></li>
+            <li><a href="#" className="hover:underline">COSEDE Protegemos tu dinero</a></li>
+          </ul>
+        </div>
+      </div>
+      <div className="container mx-auto px-4 text-center mt-8">
+        <p>&copy; 2024 Escuela Politécnica Nacional. Todos los derechos reservados.</p>
+        <p>
+          <Link className="underline hover:text-yellow-400" to="/privacy-policy">Política de Privacidad</Link> | 
+          <Link className="underline hover:text-yellow-400" to="/terms-of-service"> Términos de Servicio</Link>
+        </p>
+      </div>
+    </footer>
     </div>
   );
 }
