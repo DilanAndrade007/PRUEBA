@@ -41,6 +41,24 @@ function HomePage() {
         </div>
       </section>
 
+      <section className="bg-white flex flex-col md:flex-row justify-center items-center py-20">
+        <div className="md:w-1/2 p-10">
+          <h2 className="text-4xl py-2 font-bold text-gray-800">Bolsa de bienes en venta</h2>
+          <p className="text-md text-gray-600">
+            Descubre las oportunidades de inversión en bienes muebles e inmuebles.
+          </p>
+          <Link
+            className="bg-blue-600 text-white px-4 py-2 rounded-md mt-4 inline-block hover:bg-blue-700 transition-colors"
+            to="/more-info"
+          >
+            Conoce los bienes →
+          </Link>
+        </div>
+        <div className="md:w-1/2 p-10 flex justify-center">
+          <img src="public/techAndes.webp" alt="Bienes en venta" className="rounded-lg shadow-lg" />
+        </div>
+      </section>
+
       <section className="bg-gray-50 flex flex-col md:flex-row justify-center items-center py-20">
         <div className="md:w-1/2 p-10">
           <img src="public/cardAndes.webp" alt="PacificID Image" className="rounded-lg shadow-lg" />
@@ -58,24 +76,6 @@ function HomePage() {
           >
             Conoce más →
           </Link>
-        </div>
-      </section>
-
-      <section className="bg-white flex flex-col md:flex-row justify-center items-center py-20">
-        <div className="md:w-1/2 p-10">
-          <h2 className="text-4xl py-2 font-bold text-gray-800">Bolsa de bienes en venta</h2>
-          <p className="text-md text-gray-600">
-            Descubre las oportunidades de inversión en bienes muebles e inmuebles.
-          </p>
-          <Link
-            className="bg-blue-600 text-white px-4 py-2 rounded-md mt-4 inline-block hover:bg-blue-700 transition-colors"
-            to="/more-info"
-          >
-            Conoce los bienes →
-          </Link>
-        </div>
-        <div className="md:w-1/2 p-10 flex justify-center">
-          <img src="/images/bienes.jpg" alt="Bienes en venta" className="rounded-lg shadow-lg" />
         </div>
       </section>
 
