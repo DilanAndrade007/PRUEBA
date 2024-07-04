@@ -21,6 +21,7 @@ function HomePage() {
         Get Started
       </Link>
     </header>
+    <h1>Hoal</h1>
   </section>
   );
 }
