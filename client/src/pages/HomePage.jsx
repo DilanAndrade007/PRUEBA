@@ -25,7 +25,7 @@ function HomePage() {
           </div>
         </div>
         <div className="md:w-1/2">
-          <img src="/mnt/assets/react.svg" alt="Tarjeta de Crédito" className="rounded-lg shadow-lg" />
+          <img src="client/src/assets/image.png" alt="Tarjeta de Crédito" className="rounded-lg shadow-lg" />
         </div>
       </section>
 
