@@ -31,29 +31,29 @@ export function LoginPage() {
         {loginErrors.map((error, i) => (
           <Message message={error} key={i} />
         ))}
-        <h1 className="text-3xl font-bold">Inicia Sesión</h1>
+        <h1 className="text-3xl font-bold">Iniciar Sesión</h1>
 
         <form className="text-xl" onSubmit={handleSubmit(onSubmit)}>
           <Label htmlFor="email">Correo:</Label>
-          <Input
-            label="Write your email"
-            type="email"
+          <Input 
+            label="Escribe tu correo"
+            type="Correo"
             name="email"
-            placeholder="youremail@domain.tld"
+            placeholder="@gmail.com"
             {...register("email", { required: true })}
           />
           <p>{errors.email?.message}</p>
 
           <Label htmlFor="password">Contraseña:</Label>
           <Input
-            type="password"
+            type="contraseña"
             name="password"
-            placeholder="Write your password"
+            placeholder="Escribe tu contraseña"
             {...register("password", { required: true, minLength: 6 })}
           />
           <p>{errors.password?.message}</p>
 
-          <Button>Login</Button>
+          <Button>Iniciar</Button>
         </form>
 
         <p className="flex gap-x-2 justify-between">
