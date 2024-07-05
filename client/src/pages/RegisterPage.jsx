@@ -27,10 +27,10 @@ function Register() {
 
   return (
     <div className="h-screen flex items-center justify-center bg-gray-100">
-      <div className="flex w-full max-w-4xl">
+      <div className="flex w-full max-w-4xl shadow-lg rounded-lg overflow-hidden">
         {/* Left Section */}
-        <div className="flex-1 bg-white p-10 rounded-l-lg shadow-lg">
-          <Card className="w-full p-8 bg-white rounded-lg shadow-lg">
+        <div className="flex-1 bg-white p-10">
+          <Card className="w-full p-8 bg-gray-100 rounded-lg shadow-lg">
             {registerErrors.map((error, i) => (
               <Message message={error} key={i} />
             ))}
@@ -105,7 +105,7 @@ function Register() {
         </div>
 
         {/* Right Section */}
-        <div className="hidden md:flex flex-1 items-center justify-center bg-blue-200 rounded-r-lg p-10">
+        <div className="hidden md:flex flex-1 items-center justify-center bg-blue-200 p-10">
           <div className="text-center">
             <img src="public/id_card.svg" alt="Validation" className="w-24 h-24 mx-auto mb-4" />
             <h2 className="text-2xl font-bold text-blue-900 mb-2">Valida tu identidad</h2>
