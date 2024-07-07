@@ -28,7 +28,24 @@ export function LoginPage() {
   return (
     <div className="h-screen flex items-center justify-center bg-gray-100">
       <div className="flex w-full h-full">
-        {/* Left Section */}
+        {/* Navbar */}
+        <nav>
+          <ul>
+            <li><Link to="/cuenta">Cuenta</Link></li>
+            <li><Link to="/servicios">Servicios</Link></li>
+            <li><Link to="/perfil">Perfil</Link></li>
+            <li>
+              <span>Centro de Ayuda</span>
+              <ul>
+                <li><Link to="/chat-en-vivo">Chat en Vivo</Link></li>
+                <li><Link to="/envianos-un-correo">Envíanos un correo</Link></li>
+                <li><Link to="/canales-digitales">Canales Digitales</Link></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        {/* Rest of the Login Page */}
         <div className="flex-1 flex flex-col items-center justify-center bg-white p-10 relative">
           <img src="public/bovedaAndes.webp" alt="Banner" className="absolute inset-0 w-full h-full object-cover opacity-30" />
           <div className="w-full max-w-md p-8 bg-gray-800 text-white rounded-lg shadow-lg relative z-10" style={{ backgroundColor: 'rgba(0, 0, 0, 0.85)' }}>
@@ -71,39 +88,6 @@ export function LoginPage() {
             <p className="flex gap-x-2 justify-between mt-4">
               No tienes una cuenta? <Link to="/register" className="text-blue-500 hover:text-blue-400">Registrarse</Link>
             </p>
-          </div>
-        </div>
-
-        {/* Right Section */}
-        <div className="flex-1 hidden md:flex items-center justify-center bg-blue-200 p-10 text-white">
-          <div className="max-w-md">
-            <h2 className="text-2xl font-bold mb-4 text-blue-900">Consejos de Seguridad</h2>
-            <ul className="space-y-4">
-              <li>
-                <div className="flex items-center">
-                  <p className="text-blue-900">
-                    AndesInvest Bank, no solicita claves, usuarios, números de tarjetas o cuenta por ningún medio.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <div className="flex items-center">
-                  <p className="text-blue-900">No compartas tus claves, recuerda que son de uso personal e intransferible.</p>
-                </div>
-              </li>
-              <li>
-                <div className="flex items-center">
-                  <p className="text-blue-900">Para acceder a la Banca Virtual, asegúrese de teclear en tu navegador la dirección correcta.</p>
-                </div>
-              </li>
-              <li>
-                <div className="flex items-center">
-                  <p className="text-blue-900">
-                    En caso recibir llamadas, mensajes texto o correos sospechosos contáctate inmediatamente.
-                  </p>
-                </div>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
