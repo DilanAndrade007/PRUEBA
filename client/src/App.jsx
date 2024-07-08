@@ -1,3 +1,4 @@
+// /src/App.jsx
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 import { AuthProvider } from "./context/authContext";
@@ -8,6 +9,7 @@ import RegisterPage from "./pages/RegisterPage";
 import { TaskFormPage } from "./pages/TaskFormPage";
 import { LoginPage } from "./pages/LoginPage";
 import { TasksPage } from "./pages/TasksPage";
+import CanalesDigitales from "./pages/CanalesDigitales"; // Importa el nuevo componente
 import { TaskProvider } from "./context/tasksContext";
 
 function App() {
@@ -27,6 +29,7 @@ function App() {
                 <Route path="/tasks/:id" element={<TaskFormPage />} />
                 <Route path="/profile" element={<h1>Profile</h1>} />
               </Route>
+              <Route path="/canales-digitales" element={<CanalesDigitales />} /> {/* Nueva ruta */}
             </Routes>
           </main>
         </BrowserRouter>
