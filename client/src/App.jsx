@@ -9,8 +9,10 @@ import RegisterPage from "./pages/RegisterPage";
 import { TaskFormPage } from "./pages/TaskFormPage";
 import { LoginPage } from "./pages/LoginPage";
 import { TasksPage } from "./pages/TasksPage";
-import CanalesDigitales from "./pages/CanalesDigitales"; // Importa el nuevo componente
+import ForgotPasswordPage from "./pages/ForgotPasswordPage";
+import VerifyCodePage from './pages/VerifyCodePage'; // Nueva importación
 import { TaskProvider } from "./context/tasksContext";
+import CanalesDigitales from "./pages/CanalesDigitales"; // Importa el nuevo componente
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/login" element={<LoginPage />} />
               <Route path="/register" element={<RegisterPage />} />
+              <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+              <Route path="/verify-code" element={<VerifyCodePage />} /> {/* Nueva ruta */}
               <Route element={<ProtectedRoute />}>
                 <Route path="/tasks" element={<TasksPage />} />
                 <Route path="/add-task" element={<TaskFormPage />} />
