@@ -8,6 +8,8 @@ import RegisterPage from "./pages/RegisterPage";
 import { TaskFormPage } from "./pages/TaskFormPage";
 import { LoginPage } from "./pages/LoginPage";
 import { TasksPage } from "./pages/TasksPage";
+import ForgotPasswordPage from "./pages/ForgotPasswordPage";
+import VerifyCodePage from './pages/VerifyCodePage'; // Nueva importación
 import { TaskProvider } from "./context/tasksContext";
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/login" element={<LoginPage />} />
               <Route path="/register" element={<RegisterPage />} />
+              <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+              <Route path="/verify-code" element={<VerifyCodePage />} /> {/* Nueva ruta */}
               <Route element={<ProtectedRoute />}>
                 <Route path="/tasks" element={<TasksPage />} />
                 <Route path="/add-task" element={<TaskFormPage />} />

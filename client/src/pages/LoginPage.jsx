@@ -71,6 +71,9 @@ export function LoginPage() {
             <p className="flex gap-x-2 justify-between mt-4">
               No tienes una cuenta? <Link to="/register" className="text-blue-500 hover:text-blue-400">Registrarse</Link>
             </p>
+            <p className="flex gap-x-2 justify-between mt-4">
+              <Link to="/forgot-password" className="text-blue-500 hover:text-blue-400">Olvidaste tu contraseña?</Link>
+            </p>
           </div>
         </div>
 
