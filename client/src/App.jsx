@@ -1,3 +1,4 @@
+// /src/App.jsx
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 import { AuthProvider } from "./context/authContext";
@@ -11,6 +12,7 @@ import { TasksPage } from "./pages/TasksPage";
 import ForgotPasswordPage from "./pages/ForgotPasswordPage";
 import VerifyCodePage from './pages/VerifyCodePage'; // Nueva importación
 import { TaskProvider } from "./context/tasksContext";
+import CanalesDigitales from "./pages/CanalesDigitales"; // Importa el nuevo componente
 
 function App() {
   return (
@@ -31,6 +33,7 @@ function App() {
                 <Route path="/tasks/:id" element={<TaskFormPage />} />
                 <Route path="/profile" element={<h1>Profile</h1>} />
               </Route>
+              <Route path="/canales-digitales" element={<CanalesDigitales />} /> {/* Nueva ruta */}
             </Routes>
           </main>
         </BrowserRouter>
