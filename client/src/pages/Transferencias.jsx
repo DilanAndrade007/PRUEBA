@@ -3,9 +3,7 @@ import React from 'react';
 const Transferencias = () => {
     return (
         <div>
-                        <main>
-                
-                
+                <main>                
                 <section className="transferencias-section">
                     <div className="transfer-container">
                         <h1>Transferencias Directas</h1>
