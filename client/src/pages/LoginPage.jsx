@@ -97,13 +97,11 @@ export function LoginPage() {
                 </li>
                 <li>
                   <div className="flex items-center">
-                    <span className="material-icons mr-2 text-blue-900">public</span>
                     <p className="text-blue-900">Para acceder a la Banca Virtual, asegúrese de teclear en tu navegador la dirección correcta.</p>
                   </div>
                 </li>
                 <li>
                   <div className="flex items-center">
-                    <span className="material-icons mr-2 text-blue-900">phone</span>
                     <p className="text-blue-900">
                       En caso recibir llamadas, mensajes texto o correos sospechosos contáctate inmediatamente.
                     </p>
