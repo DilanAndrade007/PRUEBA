@@ -6,7 +6,7 @@ import { createAccessToken } from "../libs/jwt.js";
 
 export const register = async (req, res) => {
   try {
-    const { username, email, password } = req.body;
+    const { username, email, password, fullName, dateOfBirth, phoneNumber, address } = req.body;
 
     const userFound = await User.findOne({ email });
 
@@ -23,6 +23,10 @@ export const register = async (req, res) => {
       username,
       email,
       password: passwordHash,
+      fullName,
+      dateOfBirth,
+      phoneNumber,
+      address,
     });
 
     // saving the user in the database
@@ -40,9 +44,22 @@ export const register = async (req, res) => {
     });
 
     res.json({
-      id: userSaved._id,
+      _id: userSaved._id,
       username: userSaved.username,
       email: userSaved.email,
+      createdAt: userSaved.createdAt,
+      updatedAt: userSaved.updatedAt,
+      fullName: userSaved.fullName,
+      dateOfBirth: userSaved.dateOfBirth,
+      phoneNumber: userSaved.phoneNumber,
+      accountNumber: userSaved.accountNumber,
+      accountType: userSaved.accountType,
+      balance: userSaved.balance,
+      transactionHistory: userSaved.transactionHistory,
+      lastLogin: userSaved.lastLogin,
+      loginAttempts: userSaved.loginAttempts,
+      address: userSaved.address, // Devuelve la dirección guardada como un string
+      status: userSaved.status,
     });
   } catch (error) {
     res.status(500).json({ message: error.message });
@@ -52,19 +69,29 @@ export const register = async (req, res) => {
 export const login = async (req, res) => {
   try {
     const { email, password } = req.body;
-    const userFound = await User.findOne({ email });
+    const  userFound = await User.findOne({ email });
 
     if (!userFound)
       return res.status(400).json({
         message: ["The email does not exist"],
       });
 
+      
+      
     const isMatch = await bcrypt.compare(password, userFound.password);
+
     if (!isMatch) {
+      userFound.loginAttempts = (userFound.loginAttempts || 0) + 1;
+      await userFound.save();
       return res.status(400).json({
         message: ["The password is incorrect"],
       });
     }
+
+    userFound.loginAttempts = 0;
+    await userFound.save();
+    userFound.lastLogin = Date.now();
+    await userFound.save();
 
     const token = await createAccessToken({
       id: userFound._id,
