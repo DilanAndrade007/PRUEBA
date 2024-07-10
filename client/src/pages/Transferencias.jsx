@@ -13,9 +13,9 @@ const Transferencias = () => {
             <p className="text-gray-400 font-semibold">Saldo: $100</p>
           </div>
           <form className="space-y-4">
-            <div className="grid grid-cols-3 gap-4 items-center">
+            <div className="grid grid-cols-3 gap-1 items-center">
               <Label htmlFor="amount" className="block text-base font-medium text-white col-span-1">Monto</Label>
-              <div className="amount-input col-span-2 flex">
+              <div className="amount-input col-span-1 flex">
                 <span className="px-3 py-2 bg-blue-700 text-white border border-r-0 border-gray-600 rounded-l-md">$</span>
                 <Input
                   type="number"
@@ -29,14 +29,14 @@ const Transferencias = () => {
               </div>
             </div>
             <div className="grid grid-cols-3 gap-4 items-center">
-              <Label htmlFor="beneficiary-name" className="block text-base font-medium text-white col-span-1">Beneficiario</Label>
+              <Label htmlFor="beneficiary-name" className="block text-base font-medium text-white col-span-2">Beneficiario</Label>
               <Input
                 type="text"
                 id="beneficiary-name"
                 name="beneficiary-name"
                 placeholder="Nombre del beneficiario"
                 required
-                className="col-span-2 px-3 py-2 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 bg-gray-700 text-white"
+                className="col-span-4 px-3 py-2 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 bg-gray-700 text-white"
               />
             </div>
             <div className="grid grid-cols-3 gap-4 items-center">
@@ -66,7 +66,7 @@ const Transferencias = () => {
                 type="email"
                 id="notification"
                 name="notification"
-                placeholder="Correo electrónico (Opcional)"
+                placeholder="Correo electrónico"
                 className="col-span-2 px-3 py-2 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 bg-gray-700 text-white"
               />
             </div>
